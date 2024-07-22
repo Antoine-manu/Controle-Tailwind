@@ -119,7 +119,7 @@ function App() {
               </div>
             </div>
           )
-        : 'sss'}
+        : ''}
         {users.length === totalUsers ? "" : 
         <div className='xl:w-1/6 lg:w-1/5 md:w-2/6 sm:w-2/6 w-full bg-white rounded flex items-center justify-center cursor-pointer p-3 self-auto pb-8 mb-2 h-80 hover:scale-105' onClick={() => handleLoadMore()}>
           <span className='font-bold text-slate-400'>Load more</span>
