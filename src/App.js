@@ -87,7 +87,7 @@ function App() {
                 )
             :''}
           </div>
-          <input type="text" className='w-full h-full p-2 rounded-l-lg' value={input} onChange={(e) => setInput(e.target.value)} placeholder='Ajoutez un tag'/>
+          <input type="text" className='focus:outline-none border-transparent outline-none w-full h-full p-2 rounded-l-lg' value={input} onChange={(e) => setInput(e.target.value)} placeholder='Ajoutez un tag'/>
           <button className='p-2 h-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center rounded-r-lg'>
            <i class="fa-solid fa-magnifying-glass fa-md text-white"></i>
           </button>
@@ -114,7 +114,7 @@ function App() {
               </div> 
               <div className='flex flex-col bg-white rounded-b-md p-2'>
                 <span className='font-bold'>{user.firstName} {user.lastName}</span>
-                <span>{user.jobTitle}</span>
+                <span className='italic'>{user.jobTitle}</span>
                 <span className='w-full truncate'>{user.email}</span>
               </div>
             </div>
